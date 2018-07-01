@@ -18,7 +18,7 @@ class Pokemon
     name = attributes_array[1]
     type = attributes_array[2]
     hp = attributes_array[3]
-    new(id: id, name: name, type: type, db: db)
+    new(id: id, name: name, type: type, db: db, hp: hp)
   end
   
   def alter_hp(hp, db)
