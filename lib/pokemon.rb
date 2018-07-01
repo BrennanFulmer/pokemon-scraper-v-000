@@ -17,6 +17,7 @@ class Pokemon
     attributes_array = db.execute("SELECT * FROM pokemon WHERE pokemon.id = ?", id).flatten
     name = attributes_array[1]
     type = attributes_array[2]
+    hp = attributes_array[3]
     new(id: id, name: name, type: type, db: db)
   end
   
